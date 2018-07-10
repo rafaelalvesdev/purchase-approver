@@ -7,3 +7,12 @@ C:\Users\rafael.alves\Desktop\purchase-approver\code\Safeweb.PurchaseApprover.Co
 C:\Users\rafael.alves\Desktop\purchase-approver\code\Safeweb.PurchaseApprover.Common\obj\Debug\netcoreapp2.1\Safeweb.PurchaseApprover.Common.AssemblyInfo.cs
 C:\Users\rafael.alves\Desktop\purchase-approver\code\Safeweb.PurchaseApprover.Common\obj\Debug\netcoreapp2.1\Safeweb.PurchaseApprover.Common.dll
 C:\Users\rafael.alves\Desktop\purchase-approver\code\Safeweb.PurchaseApprover.Common\obj\Debug\netcoreapp2.1\Safeweb.PurchaseApprover.Common.pdb
+C:\Users\rafael.alves\Desktop\1\purchase-approver\code\Safeweb.PurchaseApprover.Common\bin\Debug\netcoreapp2.1\Safeweb.PurchaseApprover.Common.deps.json
+C:\Users\rafael.alves\Desktop\1\purchase-approver\code\Safeweb.PurchaseApprover.Common\bin\Debug\netcoreapp2.1\Safeweb.PurchaseApprover.Common.dll
+C:\Users\rafael.alves\Desktop\1\purchase-approver\code\Safeweb.PurchaseApprover.Common\bin\Debug\netcoreapp2.1\Safeweb.PurchaseApprover.Common.pdb
+C:\Users\rafael.alves\Desktop\1\purchase-approver\code\Safeweb.PurchaseApprover.Common\obj\Debug\netcoreapp2.1\Safeweb.PurchaseApprover.Common.csprojAssemblyReference.cache
+C:\Users\rafael.alves\Desktop\1\purchase-approver\code\Safeweb.PurchaseApprover.Common\obj\Debug\netcoreapp2.1\Safeweb.PurchaseApprover.Common.csproj.CoreCompileInputs.cache
+C:\Users\rafael.alves\Desktop\1\purchase-approver\code\Safeweb.PurchaseApprover.Common\obj\Debug\netcoreapp2.1\Safeweb.PurchaseApprover.Common.AssemblyInfoInputs.cache
+C:\Users\rafael.alves\Desktop\1\purchase-approver\code\Safeweb.PurchaseApprover.Common\obj\Debug\netcoreapp2.1\Safeweb.PurchaseApprover.Common.AssemblyInfo.cs
+C:\Users\rafael.alves\Desktop\1\purchase-approver\code\Safeweb.PurchaseApprover.Common\obj\Debug\netcoreapp2.1\Safeweb.PurchaseApprover.Common.dll
+C:\Users\rafael.alves\Desktop\1\purchase-approver\code\Safeweb.PurchaseApprover.Common\obj\Debug\netcoreapp2.1\Safeweb.PurchaseApprover.Common.pdb

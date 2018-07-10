@@ -18,7 +18,7 @@ Para executar o projeto em DEBUG será necessário instalar os componentes abaix
 
 #### Padrões e componentes utilizados
 O sistema foi construído utilizando o padrão SOA (_Service oriented architecture_) utilizando pequenos serviços para manipulação de dados.
-Para persistência de entidades foi utilizado o Entity Framwork Core, através do padrão Code First.
+Para persistência de entidades foi utilizado o Entity Framwork Core, através do padrão Code First, ao executar o projeto o framework criará a database, entidades necessárias e executará o seed para funcionamento inicial.
 
 A API backend está desenvolvida em Web API com ASP.NET Core e o frontend é apresentado através de Angular em uma aplicação SPA integrada ao .Net.
 
