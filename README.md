@@ -1,14 +1,14 @@
 
 ## Gestor de Aprovação de Compras
 
-##### Dependências
+#### Dependências
 Para executar o projeto em DEBUG será necessário instalar os componentes abaixo:
 * Visual Studio 15.7 ou superior
 * Node v8.11 ou superior
 * .NET Core 2.1 SDK (v2.1.302) ou superior
 * .NET Core 2.1 Runtime (v2.1.2) ou superior
 
-##### Implantação
+#### Implantação
 1. Baixar repositório https://github.com/rafaelalvesdev/purchase-approver
 ```git clone https://github.com/rafaelalvesdev/purchase-approver```
 2. Abrir solution no Visual Studio
@@ -16,7 +16,7 @@ Para executar o projeto em DEBUG será necessário instalar os componentes abaix
 4. Executar projeto SafeWeb.PurchaseApprover.Web em modo DEBUG.
 
 
-##### Padrões e componentes utilizados
+#### Padrões e componentes utilizados
 O sistema foi construído utilizando o padrão SOA (_Service oriented architecture_) utilizando pequenos serviços para manipulação de dados.
 Para persistência de entidades foi utilizado o Entity Framwork Core, através do padrão Code First.
 
