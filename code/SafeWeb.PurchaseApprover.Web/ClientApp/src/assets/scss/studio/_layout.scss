@@ -1,0 +1,26 @@
+//
+// Layout
+//
+// Header
+header {
+    .container-fluid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+// Main container
+.container,
+.container-fluid {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    &#main {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+// Login screen
+body.login {
+    margin: 0;
+}

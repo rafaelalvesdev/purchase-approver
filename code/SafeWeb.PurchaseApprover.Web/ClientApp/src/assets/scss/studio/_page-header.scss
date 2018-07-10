@@ -1,0 +1,90 @@
+// Page header 
+.page-header {
+    margin-bottom: 1rem;
+    h1,
+    .h1 {
+        margin-bottom: 0;
+    }
+    &.page-header-wizard {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        h1 {
+            margin-bottom: 0.25rem;
+        }
+        .entity-name{
+            text-overflow: ellipsis;
+            display: inline-block;       
+            max-width: 350px;
+            overflow: hidden;
+            position: relative;
+            bottom: -11px;
+            height: 48px;                    
+            white-space: nowrap;
+        }
+    }
+    .name {
+        font-size: 1.25rem;
+        span {
+            font-weight: 300;
+            text-overflow: ellipsis;
+            position: relative;
+            top: 5px;
+        }
+        img {
+            margin-right: ($spacer * .5);
+        }
+    }
+    &.page-header-intern {
+        margin-bottom: 0;
+        .col {
+            display: flex;
+            align-items: center;
+        }
+        .btn-back {
+            height: 1.8rem;
+            display: flex;
+            padding: 0.375rem;
+            position: relative;
+            top: 1px;
+            margin-right: 0.75rem;
+            i {
+                font-size: 0.95rem;
+                margin-right: 3px;
+            }
+        }
+        h1 {
+            margin-bottom: 0;
+            .badge {
+                font-size: 45%;
+                position: relative;
+                top: -4px;
+                margin-left: 0.7rem;
+                border: 1px solid;
+                background: transparent;
+                color: #aaa;
+                font-weight: 600;
+            }
+        }
+        hr {
+            margin-top: 0.75rem;
+        }
+        .button-toolbar {
+            justify-content: flex-end;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: auto;
+            max-width: none;
+            .btn-group {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.page-subheader {
+    margin-bottom: 1rem;
+    h2,
+    .h2 {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,13 @@
+.btn {
+    &:focus,
+    &.focus {
+        @include box-shadow(none);
+    }
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active {
+        box-shadow: none;
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
+}

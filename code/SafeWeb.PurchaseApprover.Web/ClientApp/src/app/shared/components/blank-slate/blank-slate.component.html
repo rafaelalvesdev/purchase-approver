@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <div class="blank-slate">
+                    <div class="row">
+                        <div class="col">
+                            <p class="lead text-muted">{{ message }}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a *ngIf="buttonUrl" class="btn btn-primary btn-lg" role="button" [routerLink]="buttonUrl">
+                                <i class="fa fa-plus-circle"></i>&nbsp;{{ buttonName }}</a>
+                            <a *ngIf="defaultButtonTabUrl" class="btn btn-primary btn-lg" href="#" role="button" (click)="openTab()">
+                                        <i class="fa fa-plus-circle"></i>&nbsp; {{ defaultButtonTabName }}
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+<ul class="color-circle">
+    <li *ngFor="let color of availableColors; let first = first;" [style.background-color]="color" (click)="onClick(color)" [class.active]="selectedColor ? color === selectedColor : first"
+        [style.box-shadow]="mountShadowStyle(color)">
+    </li>
+</ul>

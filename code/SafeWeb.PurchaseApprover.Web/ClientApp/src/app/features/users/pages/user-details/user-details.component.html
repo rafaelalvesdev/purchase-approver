@@ -1,0 +1,156 @@
+<div class="row page-header page-header-wizard" *ngIf="loaded && !user.id">
+    <div class="col">
+        <h1 class="text-center">Novo usuário</h1>
+        <p class="lead text-center text-muted">Cadastre um novo usuário administrativo no sistema</p>
+    </div>
+</div>
+<div class="row page-header page-header-wizard" *ngIf="loaded && user.id">
+    <div class="col">
+        <h1 class="text-center">Editar usuário
+            <span class="separator" *ngIf="user.name.length">- </span>
+            <span class="entity-name">{{user.name}}</span>
+        </h1>
+    </div>
+</div>
+
+<form #userForm="ngForm" (ngSubmit)="userForm.valid ? onSubmit() : false" novalidate *ngIf="loaded">
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-7">
+            <div class="card card-lg">
+                <div class="card-body">
+                    <app-summary></app-summary>
+
+                    <section class="mb-4">
+                        <div class="row">
+                            <div class="col justify-content-center">
+                                <h3 class="text-center mb-3">Digite o nome completo do usuário</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-12 justify-content-center form-group">
+                                <input #name="ngModel" placeholder="Nome do usuário" class="form-control-lg form-control" type="text" [(ngModel)]="user.name"
+                                    required [class.is-invalid]="name.invalid && userForm.submitted" [ngModelOptions]="{standalone: true}">
+                                <div class="invalid-feedback text-center" *ngIf="name.invalid && userForm.submitted">
+                                    <span>Digite o nome deste usuário.</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                    </section>
+                    <div class="row">
+                        <section class="mb-4 col-md-6">
+                            <div class="">
+                                <div class="col justify-content-center">
+                                    <h3 class="text-center mb-3">Digite o documento</h3>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="col-md-3"></div>
+                                <div class="justify-content-center form-group">
+                                    <input #documentNumber="ngModel" placeholder="CPF" class="form-control-lg form-control" type="text" [(ngModel)]="user.documentNumber"
+                                        required [class.is-invalid]="documentNumber.invalid && userForm.submitted" [ngModelOptions]="{standalone: true}">
+                                    <div class="invalid-feedback text-center" *ngIf="documentNumber.invalid && userForm.submitted">
+                                        <span>Digite o número de documento deste fornecedor.</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </section>
+                        <section class="mb-4 col-md-6">
+                            <div class="">
+                                <div class="col justify-content-center">
+                                    <h3 class="text-center mb-3">Data de nascimento</h3>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="col-md-3"></div>
+                                <div class="justify-content-center form-group">
+                                    <input #birthDate="ngModel" placeholder="(xx) xxxxx-xxxx" class="form-control-lg form-control" type="date" [(ngModel)]="user.birthDate"
+                                        required [class.is-invalid]="birthDate.invalid && userForm.submitted" [ngModelOptions]="{standalone: true}">
+                                    <div class="invalid-feedback text-center" *ngIf="birthDate.invalid && userForm.submitted">
+                                        <span>Selecione a data de nascimento.</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="row">
+
+
+                    </div>
+                    <section class="mb-4">
+                        <div class="">
+                            <div class="col justify-content-center">
+                                <h3 class="text-center mb-3">Defina um nome de usuário para login</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="justify-content-center form-group">
+                                <input #username="ngModel" placeholder="meu_usuario" class="form-control-lg form-control" type="text" [(ngModel)]="user.username"
+                                    required [class.is-invalid]="username.invalid && userForm.submitted" [ngModelOptions]="{standalone: true}">
+                                <div class="invalid-feedback text-center" *ngIf="username.invalid && userForm.submitted">
+                                    <span>Digite o nome de usuário.</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                    </section>
+                    <div class="row">
+
+
+                    </div>
+                    <section class="mb-4">
+                        <div class="">
+                            <div class="col justify-content-center">
+                                <h3 class="text-center mb-3">Defina uma senha para login</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="justify-content-center form-group">
+                                <input #password="ngModel" placeholder="minha_senha" class="form-control-lg form-control" type="password" [(ngModel)]="user.password"
+                                    required [class.is-invalid]="password.invalid && userForm.submitted" [ngModelOptions]="{standalone: true}">
+                                <div class="invalid-feedback text-center" *ngIf="password.invalid && userForm.submitted">
+                                    <span>Digite uma senha.</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                    </section>
+
+
+                    <div class="row"></div>
+                    <section class="mb-4">
+                        <div class="">
+                            <div class="col justify-content-center">
+                                <h3 class="text-center mb-3">Defina o perfil deste usuário</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="justify-content-center form-group">
+                                <select class="form-control-lg form-control" [(ngModel)]="user.userProfileId">
+                                    <option *ngFor="let profile of userProfiles" [ngValue]="profile.id">{{ profile.name }}</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center mt-2">
+        <div class="col-lg-9">
+            <div class="container d-flex justify-content-center align-items-center">
+                <a class="btn btn-light mr-2" role="button" [routerLink]="['../']" title="Cancelar">Cancelar </a>
+                <button class="btn btn-success btn-lg" type="submit" role="submit" title="Criar" *ngIf="!blockUI && !user">Criar usuário</button>
+                <button class="btn btn-success btn-lg" type="submit" role="submit" title="Salvar" *ngIf="!blockUI && user">Salvar usuário</button>
+                <button class="btn btn-success btn-lg" type="button" role="submit" title="" *ngIf="blockUI" disabled>Salvando...</button>
+            </div>
+        </div>
+    </div>
+</form>

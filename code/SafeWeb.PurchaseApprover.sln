@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Presentation", "04 - Presentation", "{2210858B-971E-4B63-928B-E66E76F9FA5F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Application", "03 - Application", "{124BCC2E-1AA1-43F0-A583-FBA6C18F804F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Model", "01 - Model", "{68B0C4F3-4895-4EBD-B7E8-81F0DBE08FCA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafeWeb.PurchaseApprover.Model", "SafeWeb.PurchaseApprover.Model\SafeWeb.PurchaseApprover.Model.csproj", "{BB2BC067-3B51-4A23-8780-8B4A1B76B761}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafeWeb.PurchaseApprover.Web", "SafeWeb.PurchaseApprover.Web\SafeWeb.PurchaseApprover.Web.csproj", "{6CDE5DC7-4052-4C83-9E14-246E0CA5DB48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Infrastructure", "02 - Infrastructure", "{6989491C-0562-45C1-9593-48AF61B857A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafeWeb.PurchaseApprover.Infrastructure", "SafeWeb.PurchaseApprover.Infrastructure\SafeWeb.PurchaseApprover.Infrastructure.csproj", "{BE16A7B7-282C-49CB-BA28-99DF2D0302C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 - CrossCutting", "00 - CrossCutting", "{69CAFA2E-7A2A-46B1-9BE9-60A840E33E04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safeweb.PurchaseApprover.Common", "Safeweb.PurchaseApprover.Common\Safeweb.PurchaseApprover.Common.csproj", "{B8CCB04A-1734-4CC7-8B6C-29A551248ED3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafeWeb.PurchaseApprover.Services", "SafeWeb.PurchaseApprover.Services\SafeWeb.PurchaseApprover.Services.csproj", "{5D458B0E-A39F-44CD-ADCD-924070EBCD7F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafeWeb.PurchaseApprover.Resources", "SafeWeb.PurchaseApprover.Resources\SafeWeb.PurchaseApprover.Resources.csproj", "{FAB5ACDC-5671-401B-99D3-8C7934FE9881}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB2BC067-3B51-4A23-8780-8B4A1B76B761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB2BC067-3B51-4A23-8780-8B4A1B76B761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB2BC067-3B51-4A23-8780-8B4A1B76B761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB2BC067-3B51-4A23-8780-8B4A1B76B761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CDE5DC7-4052-4C83-9E14-246E0CA5DB48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CDE5DC7-4052-4C83-9E14-246E0CA5DB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CDE5DC7-4052-4C83-9E14-246E0CA5DB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CDE5DC7-4052-4C83-9E14-246E0CA5DB48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE16A7B7-282C-49CB-BA28-99DF2D0302C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE16A7B7-282C-49CB-BA28-99DF2D0302C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE16A7B7-282C-49CB-BA28-99DF2D0302C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE16A7B7-282C-49CB-BA28-99DF2D0302C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8CCB04A-1734-4CC7-8B6C-29A551248ED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8CCB04A-1734-4CC7-8B6C-29A551248ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CCB04A-1734-4CC7-8B6C-29A551248ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8CCB04A-1734-4CC7-8B6C-29A551248ED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D458B0E-A39F-44CD-ADCD-924070EBCD7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D458B0E-A39F-44CD-ADCD-924070EBCD7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D458B0E-A39F-44CD-ADCD-924070EBCD7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D458B0E-A39F-44CD-ADCD-924070EBCD7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAB5ACDC-5671-401B-99D3-8C7934FE9881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB5ACDC-5671-401B-99D3-8C7934FE9881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB5ACDC-5671-401B-99D3-8C7934FE9881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB5ACDC-5671-401B-99D3-8C7934FE9881}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BB2BC067-3B51-4A23-8780-8B4A1B76B761} = {68B0C4F3-4895-4EBD-B7E8-81F0DBE08FCA}
+		{6CDE5DC7-4052-4C83-9E14-246E0CA5DB48} = {2210858B-971E-4B63-928B-E66E76F9FA5F}
+		{BE16A7B7-282C-49CB-BA28-99DF2D0302C7} = {6989491C-0562-45C1-9593-48AF61B857A0}
+		{B8CCB04A-1734-4CC7-8B6C-29A551248ED3} = {69CAFA2E-7A2A-46B1-9BE9-60A840E33E04}
+		{5D458B0E-A39F-44CD-ADCD-924070EBCD7F} = {124BCC2E-1AA1-43F0-A583-FBA6C18F804F}
+		{FAB5ACDC-5671-401B-99D3-8C7934FE9881} = {69CAFA2E-7A2A-46B1-9BE9-60A840E33E04}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {360AD938-07EE-4A15-990D-DF3B5FD0789D}
+	EndGlobalSection
+EndGlobal

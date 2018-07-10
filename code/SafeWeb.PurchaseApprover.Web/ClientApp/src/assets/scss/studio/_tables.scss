@@ -1,0 +1,219 @@
+// Table columns size
+//
+$table-col-width: .5rem;
+.table,
+.pseudo-table {
+    th,
+    td,
+    .pseudo-th,
+    .pseudo-td {
+        // Columns by percents 
+        &.table-col-w-2 {
+            width: 2%;
+            min-width: ($table-col-width * 2);
+            max-width: ($table-col-width * 2);
+        }
+        &.table-col-w-3 {
+            width: 3%;
+            min-width: ($table-col-width * 3);
+            max-width: ($table-col-width * 3);
+        }
+        &.table-col-w-4 {
+            width: 4%;
+            min-width: ($table-col-width * 4);
+            max-width: ($table-col-width * 4);
+        }
+        &.table-col-w-5 {
+            width: 5%;
+            min-width: ($table-col-width * 5);
+            max-width: ($table-col-width * 5);
+        }
+        &.table-col-w-6 {
+            width: 6%;
+            min-width: ($table-col-width * 6);
+            max-width: ($table-col-width * 6);
+        }
+        &.table-col-w-7 {
+            width: 7%;
+            min-width: ($table-col-width * 7);
+            max-width: ($table-col-width * 7);
+        }
+        &.table-col-w-8 {
+            width: 8%;
+            min-width: ($table-col-width * 8);
+            max-width: ($table-col-width * 8);
+        }
+        &.table-col-w-9 {
+            width: 9%;
+            min-width: ($table-col-width * 9);
+            max-width: ($table-col-width * 9);
+        }
+        &.table-col-w-10 {
+            width: 10%;
+            min-width: ($table-col-width * 10);
+            max-width: ($table-col-width * 10);
+        }
+        &.table-col-w-11 {
+            width: 11%;
+            min-width: ($table-col-width * 11);
+            max-width: ($table-col-width * 11);
+        }
+        &.table-col-w-12 {
+            width: 12%;
+            min-width: ($table-col-width * 12);
+            max-width: ($table-col-width * 12);
+        }
+        &.table-col-w-13 {
+            width: 13%;
+            min-width: ($table-col-width * 13);
+            max-width: ($table-col-width * 13);
+        }
+        &.table-col-w-14 {
+            width: 14%;
+            min-width: ($table-col-width * 14);
+            max-width: ($table-col-width * 14);
+        }
+        &.table-col-w-15 {
+            width: 15%;
+            min-width: ($table-col-width * 15);
+            max-width: ($table-col-width * 15);
+        }
+        &.table-col-w-20 {
+            width: 20%;
+        }
+        &.table-col-w-25 {
+            width: 25%;
+        }
+        &.table-col-w-30 {
+            width: 30%;
+        }
+        &.table-col-w-35 {
+            width: 35%;
+        }
+        &.table-col-w-40 {
+            width: 40%;
+        }
+        &.table-col-w-50 {
+            width: 50%;
+        } // Specific properties for specifc columns 
+        &:first-child {
+            padding-left: 1.5rem;
+        }
+        &.select {
+            text-align: center;
+            padding-left: 0;
+            padding-right: 0;
+            min-width: 40px;
+            max-width: 40px;
+        }
+        &.product-actions {
+            text-align: right;
+            min-width: 125px;
+            max-width: 125px;
+        }
+        &.variations-actions {
+            text-align: right;
+            min-width: 180px;
+            max-width: 180px;
+        }
+        &.actions {
+            text-align: right;
+        }
+    }
+}
+
+// Pseudo-table (without the table tag)
+//
+.pseudo-table {
+    display: table;
+    width: 100%;
+    max-width: 100%;
+    .pseudo-table-head {
+        background: $body-bg;
+        border-bottom: 1px solid $table-border-color;
+        display: table-header-group;
+        .pseudo-th {
+            vertical-align: middle;
+            border-bottom: 1px solid $table-border-color;
+            font-weight: bold;
+            border-top: none;
+        }
+    }
+    .pseudo-table-body {
+        display: table-header-group;
+        .pseudo-tr:first-child .pseudo-td {
+            border-top: none;
+        }
+    }
+    .pseudo-tr {
+        display: table-row;
+    }
+    .pseudo-th,
+    .pseudo-td {
+        padding: $table-cell-padding;
+        display: table-cell;
+        border-top: $table-border-width solid $table-border-color;
+        vertical-align: middle;
+    }
+}
+
+// Tables placeholder
+//
+.table-placeholder {
+    @extend .card;
+    margin-bottom: 2rem;
+    .table-placeholder-header {
+        @extend .card-header;
+        &.bulk-actions {
+            background: $gray-800;
+        }
+    }
+    .table-placeholder-body {
+        .table {
+            margin-bottom: 0;
+            thead th {
+                background: $body-bg;
+                border-top: none;
+                border-bottom-width: 1px;
+            }
+        }
+    }
+    .table-placeholder-footer {
+        @extend .card-footer;
+        .pagination {
+            margin-bottom: 0;
+        }
+    }
+    .table-placeholder-alert {
+        padding: $card-spacer-y $card-spacer-x;
+        font-size: $small-font-size;
+        border: none;
+        border-radius: 0;
+        &:first-child {
+            @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
+        }
+    }
+    &.sticky-header {
+        @include media-breakpoint-between(xs, lg) {
+            .pseudo-table {
+                position: inherit;
+            }
+        }
+        @include media-breakpoint-up(xl) {
+            .pseudo-table {
+                position: sticky;
+                top: 60px !important;
+                z-index: $zindex-sticky;
+            }
+            .table-responsive {
+                overflow: initial;
+            }
+        }
+    }
+}
+
+body .table-placeholder {
+    .table-placeholder-header {
+        background-color: $white;
+    }
+}

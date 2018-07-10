@@ -1,0 +1,14 @@
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Model\bin\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Model.deps.json
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Model\bin\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Model.dll
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Model\bin\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Model.pdb
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Model\bin\Debug\netcoreapp2.1\Safeweb.PurchaseApprover.Common.dll
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Model\bin\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Resources.dll
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Model\bin\Debug\netcoreapp2.1\Safeweb.PurchaseApprover.Common.pdb
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Model\bin\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Resources.pdb
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Model\obj\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Model.csprojAssemblyReference.cache
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Model\obj\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Model.csproj.CoreCompileInputs.cache
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Model\obj\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Model.AssemblyInfoInputs.cache
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Model\obj\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Model.AssemblyInfo.cs
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Model\obj\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Model.csproj.CopyComplete
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Model\obj\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Model.dll
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Model\obj\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Model.pdb

@@ -1,0 +1,23 @@
+<app-tab-header [title]="'Categorias'" [defaultButtonName]="'Adicionar nova categoria'" [defaultButtonUrl]="['add']"></app-tab-header>
+<app-blank-slate *ngIf="categories?.length === 0; else elseBlock" [message]="'Você ainda não criou nenhuma categoria.'" [buttonName]="'Adicionar categoria'"
+    [buttonUrl]="['add']"></app-blank-slate>
+<ng-template #elseBlock>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" width="1">Código</th>
+                <th scope="col" width="100%">Nome</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let category of categories">
+                <th scope="row" width="1">{{ category.id }}</th>
+                <td width="100%">{{ category.name }}</td>
+                <td>
+                    <a [routerLink]="[category.id]">Detalhes / Editar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</ng-template>

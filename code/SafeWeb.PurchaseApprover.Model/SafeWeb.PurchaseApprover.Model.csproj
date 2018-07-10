@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="7.6.104" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Safeweb.PurchaseApprover.Common\Safeweb.PurchaseApprover.Common.csproj" />
+    <ProjectReference Include="..\SafeWeb.PurchaseApprover.Resources\SafeWeb.PurchaseApprover.Resources.csproj" />
+  </ItemGroup>
+
+</Project>

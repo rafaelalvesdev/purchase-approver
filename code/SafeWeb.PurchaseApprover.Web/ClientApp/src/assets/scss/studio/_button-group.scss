@@ -1,0 +1,35 @@
+// Group of main buttons (save, cancel...)
+.btn-main-toolbar {
+    background: $body-bg;
+    border-top: 0 solid $border-color;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    &.advanced-search {
+        background: $white;
+    }
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &.clone {
+        border-top-width: 2px;
+        .container {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        &.advanced-search {
+            background: $body-bg;
+        }
+    }
+}
+
+[data-main-toolbar] {
+    -webkit-transition: max-height 0.6s, padding 0.3s;
+    -moz-transition: max-height 0.6s, padding 0.3s;
+    transition: max-height 0.6s, padding 0.3s;
+}
+
+[data-main-toolbar].toolbar-out {
+    max-height: 0;
+    padding: 0;
+}

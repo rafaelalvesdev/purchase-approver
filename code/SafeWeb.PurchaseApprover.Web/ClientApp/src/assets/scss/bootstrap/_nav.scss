@@ -1,0 +1,19 @@
+.nav-tabs {
+    margin-bottom: 1.5rem;
+    .nav-item {
+        margin-bottom: 0;
+    }
+    .nav-link {
+        border: none;
+        border-bottom: 2px solid transparent;
+        @include hover-focus {
+            border-color: transparent;
+        }
+    }
+    .nav-link.active,
+    .nav-item.show .nav-link {
+        background-color: transparent;
+        border: $nav-tabs-link-active-border-color;
+        border-bottom: 2px solid;
+    }
+}

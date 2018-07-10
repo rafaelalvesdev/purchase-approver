@@ -1,0 +1,20 @@
+.card-badge {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    z-index: 1;
+    font-size: 1rem;
+}
+
+/* Refatorar código acima 
+.card {
+
+	.badge {
+		position: absolute;
+		top: .5rem;
+		right: .5rem;
+		z-index: 1;
+		font-size: 1rem;		
+	}	
+}
+*/

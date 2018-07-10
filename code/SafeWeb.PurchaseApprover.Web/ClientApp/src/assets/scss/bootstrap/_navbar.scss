@@ -1,0 +1,99 @@
+.navbar {
+    box-shadow: $box-shadow-2;
+    @include media-breakpoint-up(lg) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.navbar-brand {
+    img {
+        height: 26px;
+        position: relative;
+        top: -2px;
+    }
+}
+
+.navbar-nav {
+    .nav-link {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .dropdown-toggle::after {
+        display: none
+    }
+    .dropdown-menu {
+        padding: 0;
+        margin-top: -.4rem;
+        opacity: 0;
+        transition: $transition-base;
+        height: 0;
+        display: block;
+        overflow: hidden;
+        &.show {
+            padding: .8em 0 1.2em;
+            opacity: 1;
+            height: auto;
+            overflow: visible;
+        }
+        .dropdown-item {
+            padding: .8rem 2rem;
+            &.main-item {
+                font-size: $font-size-base * 1.2;
+            }
+            &.secondary-item {
+                font-size: $font-size-base * 0.875;
+                color: $gray-600;
+                small {
+                    font-size: $font-size-base * 0.8;
+                }
+            }
+            &:focus,
+            &:hover {
+                background: $white;
+                color: theme-color("primary");
+            }
+            small {
+                display: block;
+                color: $gray-600;
+                &.add {
+                    display: inline;
+                    color: $dropdown-link-color;
+                    border-left: 1px solid $border-color;
+                    padding-left: .5rem;
+                    margin-left: .5rem;
+                    &:focus,
+                    &:hover {
+                        color: theme-color("primary");
+                    }
+                }
+            }
+        }
+        @include media-breakpoint-up(lg) {
+            &:before {
+                position: absolute;
+                top: -6px;
+                left: 2rem;
+                margin: 0 0 0 -6px;
+                width: 12px;
+                height: 12px;
+                transform: rotate(45deg);
+                border-radius: $border-radius 0 0 0;
+                background: $white;
+                content: '';
+            }
+            &.dropdown-menu-right:before {
+                right: 2rem;
+                left: initial;
+            }
+        }
+        .dropdown-divider {
+            margin-left: 2em;
+            margin-right: 2em;
+        }
+    }
+}
+
+.navbar-dark {
+    background: $blue linear-gradient(45deg, hsla(265, 89%, 35%, 1) 0, $blue);
+}

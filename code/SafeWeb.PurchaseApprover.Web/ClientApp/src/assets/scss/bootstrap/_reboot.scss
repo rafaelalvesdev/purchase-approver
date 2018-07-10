@@ -1,0 +1,13 @@
+html {
+    font-size: $font-size-root; // To help with the sticky footer
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 4rem 0; // Sticky nav bar and footer
+}
+
+a {
+    transition: $transition-base;
+}

@@ -1,0 +1,24 @@
+<div class="row page-header page-header-intern">
+    <div class="col d-flex align-items-center">
+        <button class="btn btn-secondary btn-back" role="button" *ngIf="backUrl" [routerLink]="backUrl">
+            <i class="fa fa-chevron-left" data-toggle="tooltip" data-placement="bottom" title="Unidade de negócio"></i>
+        </button>
+        <h1>{{ title }}
+            <span class="badge badge-pill badge-primary" *ngIf="badgeTitle">{{ badgeTitle }}</span>
+        </h1>
+    </div>
+    <div class="col button-toolbar">
+        <button *ngIf="defaultButtonUrl && !defaultButtonSubmit" class="btn btn-primary" role="button" [routerLink]="defaultButtonUrl">
+            <i class="fa fa-plus-circle"></i>&nbsp; {{ defaultButtonName }}
+        </button>
+        <button *ngIf="defaultButtonSubmit" class="btn btn-primary" role="button" type="submit">
+            {{ defaultButtonName }}
+        </button>
+        <button *ngIf="defaultButtonTabUrl && !defaultButtonSubmit" class="btn btn-primary" href="#" role="button" (click)="openTab()">
+            <i class="fa fa-plus-circle"></i>&nbsp; {{ defaultButtonTabName }}
+        </button>
+    </div>
+    <div class="col-12">
+        <hr>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+<div class="row page-header page-header-wizard" *ngIf="!category.id">
+    <div class="col">
+        <h1 class="text-center">Nova categoria</h1>
+        <p class="lead text-center text-muted">Cadastre uma nova categoria de propostas de compras</p>
+    </div>
+</div>
+<div class="row page-header page-header-wizard" *ngIf="category.id">
+    <div class="col">
+        <h1 class="text-center">Editar categoria
+            <span class="separator" *ngIf="category.name.length">- </span>
+            <span class="entity-name">{{category.name}}</span>
+        </h1>
+    </div>
+</div>
+
+<form #categoryForm="ngForm" (ngSubmit)="categoryForm.valid ? onSubmit() : false" novalidate>
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-7">
+            <div class="card card-lg">
+                <div class="card-body">
+                    <app-summary></app-summary>
+                    <section class="mb-4">
+                        <div class="row">
+                            <div class="col justify-content-center">
+                                <h3 class="text-center mb-3">Digite o nome da categoria</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-12 justify-content-center form-group">
+                                <input #name="ngModel" placeholder="Nome da categoria" class="form-control-lg form-control" type="text" [(ngModel)]="category.name"
+                                    required [class.is-invalid]="name.invalid && categoryForm.submitted" [ngModelOptions]="{standalone: true}">
+                                <div class="invalid-feedback text-center" *ngIf="name.invalid && categoryForm.submitted">
+                                    <span>Escolha um nome para esta categoria.</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                    </section>
+                    <section class="mb-1">
+                        <div class="row">
+                            <div class="col justify-content-center">
+                                <h3 class="text-center mb-3">Defina uma breve descrição para a categoria</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col d-flex justify-content-center">
+                                <textarea #description="ngModel" [(ngModel)]="category.description" placeholder="Descrição da categoria" class="no-resize form-control-lg form-control"
+                                    [ngModelOptions]="{standalone: true}" required [class.is-invalid]="name.invalid && categoryForm.submitted"></textarea>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center mt-2">
+        <div class="col-lg-9">
+            <div class="container d-flex justify-content-center align-items-center">
+                <a class="btn btn-light mr-2" role="button" [routerLink]="['../']" title="Cancelar">Cancelar </a>
+                <button class="btn btn-success btn-lg" type="submit" role="submit" title="Criar" *ngIf="!blockUI && !category">Criar categoria</button>
+                <button class="btn btn-success btn-lg" type="submit" role="submit" title="Salvar" *ngIf="!blockUI && category">Salvar categoria</button>
+                <button class="btn btn-success btn-lg" type="button" role="submit" title="" *ngIf="blockUI" disabled>Salvando...</button>
+            </div>
+        </div>
+    </div>
+</form>

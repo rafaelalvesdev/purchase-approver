@@ -1,0 +1,22 @@
+.color-circle {
+    li {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        margin-right: 0.8rem;
+        &:hover {
+            transition-duration: 0.3s;
+            transition-property: transform;
+            transform: scale(1.2);
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12);
+        }
+        &.active,
+        &:active {
+            border: 2px solid;
+            color: #fff;
+            border-radius: 50%;
+            transform: scale(1.2);
+        }
+    }
+}

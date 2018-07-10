@@ -1,0 +1,25 @@
+<app-tab-header [title]="'Usuários Administrativos'" [defaultButtonName]="'Adicionar novo usuário'" [defaultButtonUrl]="['add']"></app-tab-header>
+<app-blank-slate *ngIf="users?.length === 0; else elseBlock" [message]="'Ainda não há nenhum usuário cadastrado.'" [buttonName]="'Adicionar Usuário'"
+    [buttonUrl]="['add']"></app-blank-slate>
+<ng-template #elseBlock>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" width="1">Código</th>
+                <th scope="col" width="100%">Nome</th>
+                <th scope="col">Perfil</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <th scope="row" width="1">{{ user.id }}</th>
+                <td width="100%">{{ user.name }}</td>
+                <td width="100%">{{ user.profileName }}</td>
+                <td>
+                    <a [routerLink]="[user.id]">Detalhes / Editar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</ng-template>

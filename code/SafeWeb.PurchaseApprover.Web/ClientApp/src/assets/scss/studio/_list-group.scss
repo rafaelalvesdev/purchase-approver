@@ -1,0 +1,51 @@
+// List group clean and customizations to specific contexts
+.list-group {
+    &.list-group-clean {
+        box-shadow: none !important;
+        .list-group-item {
+            padding: $list-group-item-padding-y 0;
+            background: transparent;
+            border-width: 0 0 1px 0;
+            border-radius: 0;
+            &.active {
+                color: $body-color;
+                font-weight: bold;
+                border-bottom: 2px solid $gray-600;
+            }
+        }
+    }
+    &.list-group-sm {
+        font-size: 80%;
+    }
+    &.list-group-historic {
+        .list-group-item {
+            border: none;
+            a.historic-item {
+                display: block;
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding-right: 3rem;
+            }
+            a.new-window {
+                position: absolute;
+                top: .8rem;
+                right: 0;
+                padding: 0 .75rem;
+                border-left: $border-width solid $border-color;
+            }
+        }
+    }
+    &.list-group-channels {
+        margin-bottom: ($spacer * 2);
+        box-shadow: $box-shadow-1;
+        .list-group-item {
+            padding: 0.75rem 0;
+            &.list-group-header {
+                background-color: $card-cap-bg;
+                border-bottom: 1px solid $border-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.btn-light {
+    color: $gray-700;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    @include hover-focus-active {
+        background: $gray-100;
+    }
+    &:disabled,
+    &.disabled {
+        background: transparent;
+    }
+}
+
+.btn-light-negative {
+    @extend .btn-light;
+    color: $white;
+}
+
+.btn-outline-dark {
+    border-color: $gray-500;
+    background: transparent;
+    @include hover-focus-active {
+        background: $white;
+        color: $gray-700;
+    }
+}
+
+// Hover danger
+.hover-danger {
+    @include hover-focus-active {
+        color: $danger !important;
+    }
+}
+
+// FAB Button
+// Round button (like in Material Design).
+.btn-round {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

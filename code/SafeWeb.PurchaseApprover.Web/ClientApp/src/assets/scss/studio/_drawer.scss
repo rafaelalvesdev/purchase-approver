@@ -1,0 +1,102 @@
+//
+// Drawer
+//
+$zindex-drawer-backdrop: 1080 !default;
+$zindex-drawer: 1090 !default;
+#overlay {
+    background: $black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    display: none;
+    overflow: hidden;
+    z-index: $zindex-drawer-backdrop;
+    &.show {
+        display: block;
+        opacity: .2;
+        transition: $transition-fade;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+
+body.no-scroll {
+    overflow: hidden;
+    .container,
+    .container-fluid {
+        padding-right: 3rem;
+    }
+}
+
+.drawer {
+    height: 100%; // 100% Full-height
+    width: 0; // 0 width - change this with JavaScript
+    position: fixed; // Stay in place
+    z-index: $zindex-drawer; // Stay on top
+    top: 0; // Stay at the top
+    left: 0;
+    overflow-x: hidden; // Disable horizontal scroll
+    transition: $transition-base; //0.5 second transition effect to slide in the drawer
+    background: $white;
+    box-shadow: $box-shadow-3;
+    background: $body-bg;
+    .drawer-header {
+        height: 4rem;
+        border-bottom: 1px solid $border-color;
+        background: $white;
+        padding: 1rem;
+        padding-right: 4rem;
+    }
+    .closebtn {
+        position: absolute;
+        right: 0.25rem;
+        font-size: 2.5rem;
+        z-index: 1000000;
+        line-height: 3.5rem;
+        padding: 0 1rem;
+        @include hover-focus {
+            text-decoration: none;
+        }
+    }
+    .drawer-body {
+        padding: 1.5rem 2rem;
+    }
+    &.right {
+        right: 0;
+        left: initial;
+        .drawer-header {
+            padding-left: 4rem;
+            padding-right: 1rem;
+        }
+        .closebtn {
+            left: 0.25rem;
+            right: initial;
+        }
+    }
+    &.w-25 {
+        width: 25%;
+    }
+    &.w-35 {
+        width: 35%;
+    }
+    &.w-40 {
+        width: 40%;
+    }
+    &.w-50 {
+        width: 50%;
+    }
+    &.w-75 {
+        width: 75%;
+    }
+    &.full {
+        width: 100%;
+    }
+    @include media-breakpoint-between(xs, md) {
+        &.w-25 {
+            width: 100% !important;
+        }
+    }
+}

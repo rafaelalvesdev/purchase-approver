@@ -1,0 +1,36 @@
+.form-control {
+    &:focus {
+        box-shadow: none;
+    }
+    @include box-shadow(none);
+}
+
+.col-form-label {
+    @include media-breakpoint-up(md) {
+        text-align: right;
+    }
+}
+
+.form-group {
+    .form-group-field-wrapper {
+        padding: 1rem 0;
+        border-radius: $border-radius;
+    }
+    &.form-group-line {
+        margin-bottom: 4px;
+    }
+}
+
+textarea.no-resize{
+    resize: none;
+}
+
+textarea.form-control-lg{
+    height: 150px;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}

@@ -1,0 +1,7 @@
+@mixin button-outline-variant($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
+    background-color: $white;
+    &:focus,
+    &.focus {
+        @include box-shadow(none);
+    }
+}

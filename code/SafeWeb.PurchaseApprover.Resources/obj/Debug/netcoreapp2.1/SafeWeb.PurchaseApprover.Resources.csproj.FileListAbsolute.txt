@@ -1,0 +1,12 @@
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Resources\bin\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Resources.deps.json
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Resources\bin\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Resources.dll
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Resources\bin\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Resources.pdb
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Resources\obj\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Resources.csprojAssemblyReference.cache
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Resources\obj\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Resources.UIResources.resources
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Resources\obj\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Resources.ValidationResources.resources
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Resources\obj\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Resources.csproj.GenerateResource.cache
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Resources\obj\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Resources.csproj.CoreCompileInputs.cache
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Resources\obj\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Resources.AssemblyInfoInputs.cache
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Resources\obj\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Resources.AssemblyInfo.cs
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Resources\obj\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Resources.dll
+C:\Users\rafael.alves\Desktop\purchase-approver\code\SafeWeb.PurchaseApprover.Resources\obj\Debug\netcoreapp2.1\SafeWeb.PurchaseApprover.Resources.pdb

@@ -1,0 +1,110 @@
+<div class="row page-header page-header-wizard" *ngIf="!supplier.id">
+    <div class="col">
+        <h1 class="text-center">Novo fornecedor</h1>
+        <p class="lead text-center text-muted">Cadastre um novo fornecedor para propostas de compras</p>
+    </div>
+</div>
+<div class="row page-header page-header-wizard" *ngIf="supplier.id">
+    <div class="col">
+        <h1 class="text-center">Editar fornecedor
+            <span class="separator" *ngIf="supplier.name.length">- </span>
+            <span class="entity-name">{{supplier.name}}</span>
+        </h1>
+    </div>
+</div>
+
+<form #supplierForm="ngForm" (ngSubmit)="supplierForm.valid ? onSubmit() : false" novalidate>
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-7">
+            <div class="card card-lg">
+                <div class="card-body">
+                    <app-summary></app-summary>
+                    <section class="mb-4">
+                        <div class="row">
+                            <div class="col justify-content-center">
+                                <h3 class="text-center mb-3">Digite o nome do fornecedor</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-12 justify-content-center form-group">
+                                <input #name="ngModel" placeholder="Nome do fornecedor" class="form-control-lg form-control" type="text" [(ngModel)]="supplier.name"
+                                    required [class.is-invalid]="name.invalid && supplierForm.submitted" [ngModelOptions]="{standalone: true}">
+                                <div class="invalid-feedback text-center" *ngIf="name.invalid && supplierForm.submitted">
+                                    <span>Digite o nome deste fornecedor.</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                    </section>
+                    <section class="mb-4">
+                        <div class="row">
+                            <div class="col justify-content-center">
+                                <h3 class="text-center mb-3">Digite o e-mail</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-12 justify-content-center form-group">
+                                <input #email="ngModel" placeholder="fornecedor@site.com" class="form-control-lg form-control" type="text" [(ngModel)]="supplier.email"
+                                    required [class.is-invalid]="email.invalid && supplierForm.submitted" [ngModelOptions]="{standalone: true}">
+                                <div class="invalid-feedback text-center" *ngIf="email.invalid && supplierForm.submitted">
+                                    <span>Digite o e-mail.</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                    </section>
+                    <div class="row">
+                        <section class="mb-4 col-md-6">
+                            <div class="">
+                                <div class="col justify-content-center">
+                                    <h3 class="text-center mb-3">Digite o documento</h3>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="col-md-3"></div>
+                                <div class="justify-content-center form-group">
+                                    <input #documentNumber="ngModel" placeholder="CPF ou CNPJ" class="form-control-lg form-control" type="text" [(ngModel)]="supplier.documentNumber"
+                                        required [class.is-invalid]="documentNumber.invalid && supplierForm.submitted" [ngModelOptions]="{standalone: true}">
+                                    <div class="invalid-feedback text-center" *ngIf="documentNumber.invalid && supplierForm.submitted">
+                                        <span>Digite o número de documento deste fornecedor.</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </section>
+                        <section class="mb-4 col-md-6">
+                            <div class="">
+                                <div class="col justify-content-center">
+                                    <h3 class="text-center mb-3">Digite o telefone</h3>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="col-md-3"></div>
+                                <div class="justify-content-center form-group">
+                                    <input #phone="ngModel" placeholder="(xx) xxxxx-xxxx" class="form-control-lg form-control" type="text" [(ngModel)]="supplier.phone"
+                                        required [class.is-invalid]="phone.invalid && supplierForm.submitted" [ngModelOptions]="{standalone: true}">
+                                    <div class="invalid-feedback text-center" *ngIf="phone.invalid && supplierForm.submitted">
+                                        <span>Digite o telefone deste fornecedor.</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center mt-2">
+        <div class="col-lg-9">
+            <div class="container d-flex justify-content-center align-items-center">
+                <a class="btn btn-light mr-2" role="button" [routerLink]="['../']" title="Cancelar">Cancelar </a>
+                <button class="btn btn-success btn-lg" type="submit" role="submit" title="Criar" *ngIf="!blockUI && !supplier">Criar fornecedor</button>
+                <button class="btn btn-success btn-lg" type="submit" role="submit" title="Salvar" *ngIf="!blockUI && supplier">Salvar fornecedor</button>
+                <button class="btn btn-success btn-lg" type="button" role="submit" title="" *ngIf="blockUI" disabled>Salvando...</button>
+            </div>
+        </div>
+    </div>
+</form>

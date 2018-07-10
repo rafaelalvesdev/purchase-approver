@@ -1,0 +1,68 @@
+// Mains tabs 
+
+.nav-tabs-main {
+
+	background: $white;
+	position: fixed;
+    top: 52px;
+    right: 0;
+    left: 0;
+    z-index: $zindex-sticky;
+
+	&.nav-tabs {
+
+		.nav-item {
+			border-right: 1px solid $border-color;
+			margin-bottom: -1px;
+		}	
+
+		.nav-link {
+			color: $body-color;
+			font-size: 90%;
+
+			@include hover-focus {
+				color: $primary;
+			}
+
+			i.fa-close {
+				color: $text-muted;
+			}
+		}
+
+		.nav-link.active,
+		.nav-item.show .nav-link {
+			border-color: transparent;
+			background-color: $body-bg;
+			color: $primary;
+			font-weight: bold;
+		}
+
+
+	}
+
+}
+
+// Sub menu (internal tabs, second level)
+
+.submenu {
+
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+  font-size: 12px;
+}
+
+.submenu .nav.nav-pills .nav-item a.nav-link {
+  color: #212529;
+  padding-right: 0px;
+  padding-left: 0px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.submenu .nav.nav-pills .nav-item a.nav-link:active {
+  background: transparent;
+  color: #212529;
+  font-weight: bold;
+  border-bottom: 1px solid #6c757d !important;
+  border-radius: 0 !important; 
+}
+

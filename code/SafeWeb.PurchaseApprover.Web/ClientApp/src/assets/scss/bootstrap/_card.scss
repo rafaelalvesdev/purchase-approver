@@ -1,0 +1,41 @@
+.card {
+    box-shadow: $box-shadow-1;
+    margin-bottom: ($spacer * 2);
+    &.card-lg {
+        .card-body {
+            padding: 3rem;
+        }
+    }
+    .card {
+        box-shadow: none;
+        margin-bottom: $form-group-margin-bottom;
+    }
+    .last {
+        margin-bottom: 0;
+    }
+    .form-group:last-child {
+        margin-bottom: 0;
+    }
+    &.card-accent {
+        .card-header {
+            border-left: 3px solid;
+        }
+    }
+}
+
+.card-header {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        margin-bottom: 0;
+    }
+}

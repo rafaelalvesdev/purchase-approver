@@ -1,0 +1,13 @@
+// Badge sizes
+.badge {
+    &.badge-default {
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    &.badge-lg {
+        font-size: 1rem;
+        cursor: pointer;
+        padding-top: .3rem;
+        padding-bottom: .3rem;
+    }
+}

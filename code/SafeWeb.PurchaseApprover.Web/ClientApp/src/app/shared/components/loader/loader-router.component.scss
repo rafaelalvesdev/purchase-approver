@@ -1,0 +1,19 @@
+.loader-component{
+    position: fixed; 
+    height: 100%; 
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.9);
+    z-index: 999;
+    .loading {
+        left: calc(50% - 100px);
+        top: 30%;
+        position: absolute;
+        z-index: 1050;
+        animation: fa-spin .75s infinite linear;
+    }
+
+}
+ 
+.loader-hidden{
+    display: none;
+}
