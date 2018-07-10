@@ -12650,11 +12650,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Web\\SafeWeb.PurchaseApprover.Web.csproj",
+      "projectUniqueName": "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Web\\SafeWeb.PurchaseApprover.Web.csproj",
       "projectName": "SafeWeb.PurchaseApprover.Web",
-      "projectPath": "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Web\\SafeWeb.PurchaseApprover.Web.csproj",
+      "projectPath": "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Web\\SafeWeb.PurchaseApprover.Web.csproj",
       "packagesPath": "C:\\Users\\rafael.alves\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Web\\obj\\",
+      "outputPath": "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12673,14 +12673,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Infrastructure\\SafeWeb.PurchaseApprover.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Infrastructure\\SafeWeb.PurchaseApprover.Infrastructure.csproj"
+            "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Infrastructure\\SafeWeb.PurchaseApprover.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Infrastructure\\SafeWeb.PurchaseApprover.Infrastructure.csproj"
             },
-            "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Model\\SafeWeb.PurchaseApprover.Model.csproj": {
-              "projectPath": "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Model\\SafeWeb.PurchaseApprover.Model.csproj"
+            "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Model\\SafeWeb.PurchaseApprover.Model.csproj": {
+              "projectPath": "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Model\\SafeWeb.PurchaseApprover.Model.csproj"
             },
-            "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Services\\SafeWeb.PurchaseApprover.Services.csproj": {
-              "projectPath": "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Services\\SafeWeb.PurchaseApprover.Services.csproj"
+            "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Services\\SafeWeb.PurchaseApprover.Services.csproj": {
+              "projectPath": "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Services\\SafeWeb.PurchaseApprover.Services.csproj"
             }
           }
         }

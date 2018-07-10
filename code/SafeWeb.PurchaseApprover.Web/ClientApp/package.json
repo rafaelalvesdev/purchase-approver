@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "npm run build-routes && ng build && ng serve -o",
+    "start": "npm run build-routes && ng build && ng serve",
     "build": "npm run build-routes && ng build --prod",
     "test": "ng test",
     "lint": "ng lint",

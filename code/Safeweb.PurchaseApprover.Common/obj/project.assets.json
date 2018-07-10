@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\Safeweb.PurchaseApprover.Common\\Safeweb.PurchaseApprover.Common.csproj",
+      "projectUniqueName": "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\Safeweb.PurchaseApprover.Common\\Safeweb.PurchaseApprover.Common.csproj",
       "projectName": "Safeweb.PurchaseApprover.Common",
-      "projectPath": "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\Safeweb.PurchaseApprover.Common\\Safeweb.PurchaseApprover.Common.csproj",
+      "projectPath": "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\Safeweb.PurchaseApprover.Common\\Safeweb.PurchaseApprover.Common.csproj",
       "packagesPath": "C:\\Users\\rafael.alves\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\Safeweb.PurchaseApprover.Common\\obj\\",
+      "outputPath": "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\Safeweb.PurchaseApprover.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Resources\\SafeWeb.PurchaseApprover.Resources.csproj",
+      "projectUniqueName": "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Resources\\SafeWeb.PurchaseApprover.Resources.csproj",
       "projectName": "SafeWeb.PurchaseApprover.Resources",
-      "projectPath": "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Resources\\SafeWeb.PurchaseApprover.Resources.csproj",
+      "projectPath": "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Resources\\SafeWeb.PurchaseApprover.Resources.csproj",
       "packagesPath": "C:\\Users\\rafael.alves\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Resources\\obj\\",
+      "outputPath": "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Resources\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

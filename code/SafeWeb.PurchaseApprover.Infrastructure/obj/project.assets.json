@@ -4147,11 +4147,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Infrastructure\\SafeWeb.PurchaseApprover.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Infrastructure\\SafeWeb.PurchaseApprover.Infrastructure.csproj",
       "projectName": "SafeWeb.PurchaseApprover.Infrastructure",
-      "projectPath": "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Infrastructure\\SafeWeb.PurchaseApprover.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Infrastructure\\SafeWeb.PurchaseApprover.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\rafael.alves\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4170,8 +4170,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Model\\SafeWeb.PurchaseApprover.Model.csproj": {
-              "projectPath": "C:\\Users\\rafael.alves\\Desktop\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Model\\SafeWeb.PurchaseApprover.Model.csproj"
+            "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Model\\SafeWeb.PurchaseApprover.Model.csproj": {
+              "projectPath": "C:\\Users\\rafael.alves\\Desktop\\1\\purchase-approver\\code\\SafeWeb.PurchaseApprover.Model\\SafeWeb.PurchaseApprover.Model.csproj"
             }
           }
         }
