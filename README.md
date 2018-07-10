@@ -7,6 +7,7 @@ Para executar o projeto em DEBUG será necessário instalar os componentes abaix
 * Node v8.11 ou superior
 * .NET Core 2.1 SDK (v2.1.302) ou superior
 * .NET Core 2.1 Runtime (v2.1.2) ou superior
+* Angular 6
 
 #### Implantação
 1. Baixar repositório https://github.com/rafaelalvesdev/purchase-approver
